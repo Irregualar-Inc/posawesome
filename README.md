@@ -3,7 +3,7 @@
     <h2>POS AWESOME</h2>
 </div>
 
-#### An open-source Point of Sale for [Erpnext](https://github.com/frappe/erpnext) using [Vue.js](https://github.com/vuejs/vue) and [Vuetify](https://github.com/vuetifyjs/vuetify)
+#### A customized open-source Point of Sale for [Erpnext](https://github.com/frappe/erpnext) using [Vue.js](https://github.com/vuejs/vue) and [Vuetify](https://github.com/vuetifyjs/vuetify)
 
 ---
 
@@ -45,13 +45,10 @@
 
 ### How to Install
 
-#### Frappe Cloud:
-
-One-click installing available if you are hosting on FC from [here](https://frappecloud.com/marketplace/apps/posawesome)
 
 #### Self Hosting:
 
-1. `bench get-app branch version-14 https://github.com/yrestom/POS-Awesome.git`
+1. `bench get-app branch main https://github.com/Irregualar-Inc/posawesome`
 2. `bench setup requirements`
 3. `bench build --app posawesome`
 4. `bench restart`
@@ -68,24 +65,24 @@ If you are hosting on FC premium support is available [here](https://frappecloud
 
 #### Self Hosting:
 
-If you need premium support please email me [here](mailto:info@totrox.com)
+If you need premium support please email me [here](mailto:olatunji@irregualar.com)
 
 #### Community Support:
 
-Available in GitHub [discussions](https://github.com/yrestom/POS-Awesome/discussions)
+Available in GitHub [discussions](https://github.com/Irregualar-Inc/posawesome/discussions)
 
 ---
 
 ### New Features and Bug report:
 
-- Please Create Github Issue from [here](https://github.com/yrestom/POS-Awesome/issues/new/choose) after checking the existing issues
-- For paid features, you can email me [here](mailto:info@totrox.com)
+- Please Create Github Issue from [here](https://github.com/Irregualar-Inc/posawesome/issues/new/choose) after checking the existing issues
+- For paid features, you can email me [here](mailto:olatunji@irregualar.com)
 
 ---
 
 ### How To Use:
 
-[POS Awesome Wiki](https://github.com/yrestom/POS-Awesome/wiki)
+[POS Awesome Wiki](https://github.com/Irregualar-Inc/posawesome/wiki)
 
 ---
 
@@ -119,6 +116,6 @@ Will using for this the same guidelines from Erpnext
 
 ### License
 
-GNU/General Public License (see [license.txt](https://github.com/yrestom/POS-Awesome/blob/master/license.txt))
+GNU/General Public License (see [license.txt](https://github.com/Irregualar-Inc/posawesome/blob/main/license.txt))
 
 The POS Awesome code is licensed as GNU General Public License (v3)
