@@ -18,14 +18,16 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-    <v-dialog v-model="codeDialog" max-width="330">
+    <v-dialog v-model="codeDialog" max-width="330" @click:outside="clearCode">
     <v-card>
       <v-card-title class="text-h5">
         <span class="headline primary--text">{{ __("Enter 6-Digit Code") }}</span>
       </v-card-title>
       <v-card-text>
         <v-text-field v-model="code" label="Code" type="text" maxlength="6"></v-text-field>
-        <v-alert v-if="error" type="error">{{ error }}</v-alert>
+        <div v-if="error" class="error-message">
+          <v-icon color="red">mdi-alert-octagon</v-icon> {{ error }}
+        </div>
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
@@ -2913,6 +2915,8 @@ export default {
       if (this.code === this.correctCode) {
         this.codeDialog = false;
         this.cancel_dialog = true;
+        this.code = "";
+        this.error = "";
       } else {
         this.error = "Incorrect code. Please try again.";
       }
@@ -3067,5 +3071,13 @@ export default {
 }
 .disable-events {
   pointer-events: none;
+}
+.error-message {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+.error-message v-icon {
+  margin-right: 40px;
 }
 </style>
