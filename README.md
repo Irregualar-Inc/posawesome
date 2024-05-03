@@ -58,10 +58,9 @@
 6. `bench --site [your.site.name] migrate`
 
 ##### Update Existing:
-1. `bench get-app branch main https://github.com/Irregualar-Inc/posawesome`
-2. `on the prompt, enter 'y' and press enter`
-3. `bench restart`
-4. `bench --site [your.site.name] migrate`
+1. `bench get-app branch main https://github.com/Irregualar-Inc/posawesome --overwrite`
+2. `bench restart`
+3. `bench --site [your.site.name] migrate`
 
 ---
 
