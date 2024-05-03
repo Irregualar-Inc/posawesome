@@ -48,6 +48,8 @@
 
 #### Self Hosting:
 
+##### New Installation:
+
 1. `bench get-app branch main https://github.com/Irregualar-Inc/posawesome`
 2. `bench setup requirements`
 3. `bench build --app posawesome`
@@ -55,13 +57,16 @@
 5. `bench --site [your.site.name] install-app posawesome`
 6. `bench --site [your.site.name] migrate`
 
+##### Update Existing:
+1. `bench remove-app posawesome`
+2. `bench get-app branch main https://github.com/Irregualar-Inc/posawesome`
+3. `bench build --app posawesome`
+4. `bench restart`
+5. `bench --site [your.site.name] migrate`
+
 ---
 
 ### Support
-
-#### Frappe Cloud:
-
-If you are hosting on FC premium support is available [here](https://frappecloud.com/marketplace/apps/posawesome)
 
 #### Self Hosting:
 
