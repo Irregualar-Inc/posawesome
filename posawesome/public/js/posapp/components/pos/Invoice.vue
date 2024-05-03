@@ -882,7 +882,7 @@ export default {
       codeDialog: false,
       code: "",
       error: "",
-      correctCode: "PS0934",
+      correctCodes: ["Y7JZD5", "N4G9B6", "K8T2X3", "P1W6R7", "C5Q9H2", "E3V7M4"],
       float_precision: 2,
       currency_precision: 2,
       new_line: false,
@@ -2912,7 +2912,7 @@ export default {
       // Logic to cancel invoice
     },
     validateCode() {
-      if (this.code === this.correctCode) {
+      if (this.correctCodes.includes(this.code)) {
         this.codeDialog = false;
         this.cancel_dialog = true;
         this.code = "";
