@@ -649,7 +649,7 @@
             >{{ __("Submit & Print") }}</v-btn
           >
         </v-col>
-        <v-col cols="12" v-if="pos_profile.posa_allow_cancel_payments">
+        <v-col cols="12" v-if="pos_profile.posa_allow_cancel_payment">
           <v-btn
             block
             class="mt-2 pa-1"

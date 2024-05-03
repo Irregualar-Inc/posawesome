@@ -811,6 +811,7 @@
               <v-btn
                 block
                 class="pa-0"
+                :class="{ 'disable-events': !pos_profile.posa_allow_save_and_new }"
                 color="accent"
                 dark
                 @click="new_invoice"
