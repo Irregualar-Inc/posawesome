@@ -118,6 +118,9 @@ export default {
       this.closingDialog = false;
     },
     obscureAmount(amount) {
+      if (!pos_profile.posa_obscure_price_on_close_shift) {
+        return this.formtCurrency(amount);
+      }
       const amountString = this.formtCurrency(amount);
       return amountString.replace(/\d(?=\d{2})/g, '*');
     }
