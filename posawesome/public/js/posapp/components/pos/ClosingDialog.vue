@@ -41,18 +41,18 @@
                     <template v-slot:item.difference="{ item }">
                       {{ currencySymbol(pos_profile.currency) }}
                       {{
-                        (item.difference = formtCurrency(
+                        (item.difference = obscureAmount(
                           item.expected_amount - item.closing_amount
                         ))
                       }}</template
                     >
                     <template v-slot:item.opening_amount="{ item }">
                       {{ currencySymbol(pos_profile.currency) }}
-                      {{ formtCurrency(item.opening_amount) }}</template
+                      {{ obscureAmount(item.opening_amount) }}</template
                     >
                     <template v-slot:item.expected_amount="{ item }">
                       {{ currencySymbol(pos_profile.currency) }}
-                      {{ formtCurrency(item.expected_amount) }}</template
+                      {{ obscureAmount(item.expected_amount) }}</template
                     >
                   </v-data-table>
                 </template>
@@ -117,6 +117,10 @@ export default {
       evntBus.$emit('submit_closing_pos', this.dialog_data);
       this.closingDialog = false;
     },
+    obscureAmount(amount) {
+      const amountString = this.formtCurrency(amount);
+      return amountString.replace(/\d(?=\d{2})/g, '*');
+    }
   },
 
   created: function () {
