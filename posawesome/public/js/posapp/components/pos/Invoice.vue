@@ -210,7 +210,7 @@
             <template v-slot:expanded-item="{ headers, item }">
               <td :colspan="headers.length" class="ma-0 pa-0">
                 <v-row class="ma-0 pa-0">
-                  <v-col cols="1">
+                  <v-col v-if="pos_profile.posa_allow_delete_item_from_till" cols="1">
                     <v-btn
                       :disabled="!!item.posa_is_offer || !!item.posa_is_replace"
                       icon
